@@ -13,13 +13,13 @@
 
 ## Instructions:
 
-Inside the project root run `npx create-strapi-app@latest server`
-This will overwrite the data in your server folder with a new Strapi project so an admin can be set up to load in the project data.
+- Inside the project root run `npx create-strapi-app@latest server`
+- This will overwrite the data in your server folder with a new Strapi project so an admin can be set up to load in the project data.
 
 ## Example Admin:
 
-test@gmail.com
-TEST123abc
+- test@gmail.com
+- TEST123abc
 
 ## Strapi Project Data Entry Instructions:
 
@@ -35,6 +35,7 @@ In a new terminal run `npm i ` to install and then run `npm run start` to start 
 
 ## Stripe Integration
 
-Inside the new server folder run `npm i stripe` for the Stripe integration
-In the server folder .env add in your Stripe Secret Key
-In the client folder create a .env file and add in REACT_APP_STRIPE_PUBLIC_KEY='CHANGETHISTOYOURSTRIPEPUBLICKEY'
+- Inside the new server folder run `npm i stripe` for the Stripe integration
+- In the server folder .env add in your Stripe Secret Key
+- In the client folder create a .env file and add in REACT_APP_STRIPE_PUBLIC_KEY='CHANGETHISTOYOURSTRIPEPUBLICKEY'
+- In the `server/src/api/order/controllers/order.js` adjust the file back to the state it was in prior to the creation of the new Strapi project. This files has specific code to allow for the Stripe integration to push data into Strapi.
