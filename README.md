@@ -1,8 +1,40 @@
-# React Ecommerce App
+# Strapi React E-Commerce App
 
-Build a FULLSTACK React Ecommerce App that is fully Responsive with Stripe Payment
+## Built with:
 
-Video: https://www.youtube.com/watch?v=EBCdyQ_HFMo
+- Create React App
+- Material UI
+- Formik
+- Yup form validation
+- React responsive carousel
+- Redux toolkit
+- Strapi
+- Stripe
 
-For all related questions and discussions about this project, check out the discord: https://discord.gg/2FfPeEk2mX
+## Instructions:
 
+Inside the project root run `npx create-strapi-app@latest server`
+This will overwrite the data in your server folder with a new Strapi project so an admin can be set up to load in the project data.
+
+## Example Admin:
+
+test@gmail.com
+TEST123abc
+
+## Strapi Project Data Entry Instructions:
+
+[https://youtu.be/EBCdyQ_HFMo?t=244&si=curkZZiTT6qKHkj8](https://youtu.be/EBCdyQ_HFMo?t=244&si=curkZZiTT6qKHkj8)
+
+## Allow Access to the Strapi REST API
+
+In the Strapi dashboard go to: `Settings -> Users & Permissions Plugin -> Roles -> Public`, then click on the edit icon and select the dropdown caret for `Item` and `Order` set toggle on the `Select All` checkbox
+
+## Client Folder
+
+In a new terminal run `npm i ` to install and then run `npm run start` to start the front end.
+
+## Stripe Integration
+
+Inside the new server folder run `npm i stripe` for the Stripe integration
+In the server folder .env add in your Stripe Secret Key
+In the client folder create a .env file and add in REACT_APP_STRIPE_PUBLIC_KEY='CHANGETHISTOYOURSTRIPEPUBLICKEY'
